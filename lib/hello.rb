@@ -1,7 +1,9 @@
-# This is an unwanted but committed change. 
+require 'greeter'
+
+# Default is World
 name = ARGV.first || "World"
-puts "Hello, #{name}!"
-puts "Hello, World"
-puts "hi"
-puts "hi2"
+
+greeter = Greeter.new(name)
+puts greeter.greet
+
 
